@@ -1,0 +1,9 @@
+{
+  "name": "Viva-Napoli",
+  "version": "1.0.0",
+  "description": "This is a realtime pizza app",
+  "main": "index.js",
+  "author": "Rishikesh K V <rishikeshkaroth@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/rishi9808/realtime-pizza-app"
+}

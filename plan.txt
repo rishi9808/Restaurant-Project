@@ -1,0 +1,19 @@
+create directory structure
+create a npm project and install all dependencies
+
+dependencies
+    -express
+    -ejs express-ejs-layouts
+Dev dependencies
+    -nodemon
+
+Create express server -create server.js file
+create home page using html and css
+    -include tailwind css
+Create cart page
+    -order summary section 
+    -empty cart section 
+Create order controller and link it to server.js
+Create order view with table for customer and admin 
+create orders single page with status
+create login page with route
