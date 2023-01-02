@@ -21,6 +21,14 @@ nav li a{
 
 }
 
+.btn-primary{
+    background: $primary;
+    transition: $smooth;
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
 section.hero{
     background: $secondary;
 }
@@ -38,5 +46,23 @@ section.hero{
         border-color: $pure;
         color: $pure;
         
+    }
+}
+
+section.cart {
+    background: $secondary;
+    .amount{
+        color: $primary;
+    }
+}
+
+section.login , section.register {
+    background: $secondary;
+    min-height: calc(100vh - 86px);
+    a{
+        color: $primary;
+        &:hover{
+            color: $primary-hover;
+        }
     }
 }
