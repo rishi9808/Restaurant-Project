@@ -8,6 +8,7 @@ var mongoose = require('mongoose')
 const session = require('express-session')
 const flash = require('express-flash')
 const MongoDbStore = require('connect-mongo')
+const expressEjsLayouts = require('express-ejs-layouts')
 
 //Database Connection
 const url = 'mongodb://localhost/viva-napoli'
@@ -45,6 +46,13 @@ app.use(flash())
 
 //Assets
 app.use(express.static('public'))
+app.use(express.json())
+
+//GLOBAL MIDDLEWARE
+app.use((req,res,next) => {
+    res.locals.session = req.session
+    next()
+})
 
 //set Template engine
 app.use(expressLayout)
